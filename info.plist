@@ -125,36 +125,6 @@
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>on run argv
-  set theQuery to item 1 of argv
-  tell application "System Events"
-    set splitedArgv to paragraphs of theQuery    repeat with theItem in splitedArgv
-      keystroke theItem
-      key code 48
-    end repeat  end tell
-end run</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>D3B80495-FE85-4DE0-A65B-22350A06A60A</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
 				<string>function run(argv) {
   let props = argv[0].split("\n")
   let password = props[0]
@@ -178,6 +148,36 @@ end run</string>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>EC6D9F3A-C1CC-4A54-B67F-43FB87B185B2</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>on run argv
+  set theQuery to item 1 of argv
+  tell application "System Events"
+    set splitedArgv to paragraphs of theQuery    repeat with theItem in splitedArgv
+      keystroke theItem
+      key code 48
+    end repeat  end tell
+end run</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D3B80495-FE85-4DE0-A65B-22350A06A60A</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -248,6 +248,30 @@ pass "$1"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>PATH=/opt/homebrew/bin:$PATH
+pass otp "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>40CC44AA-FE50-408A-84A3-68F83ED5273E</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -293,30 +317,6 @@ pass "$1"</string>
 			<string>1455C718-9096-475D-B4E5-64695E1ECA97</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>PATH=/opt/homebrew/bin:$PATH
-pass otp "$1"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>40CC44AA-FE50-408A-84A3-68F83ED5273E</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
