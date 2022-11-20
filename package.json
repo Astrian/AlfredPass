@@ -1,0 +1,16 @@
+{
+  "name": "alfredpass",
+  "version": "1.0.0",
+  "main": "app.ts",
+  "author": "Astrian Zheng",
+  "license": "MIT",
+  "scripts": {
+    "compile": "tsc",
+    "dev": "ts-node-esm app.ts"
+  },
+  "dependencies": {
+    "alfy": "^1.0.0",
+    "shelljs": "^0.8.5"
+  },
+  "type": "module"
+}
