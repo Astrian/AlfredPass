@@ -18,9 +18,12 @@ The workflow will autofill your username and password with AppleScript, and copy
 
 ## Other features
 ### Large type of OTP
-Select crentical with holding ⌘ key, the workflow will show the OTP with large type mode.
+Select crentical with holding ⌥ (Option) key, the workflow will show the OTP with large type mode.
 
 ![Large type showcase](https://s2.loli.net/2022/11/20/JXEaNRzkiSFeAcj.png)
+
+### Copy login crenticals one-by-one
+Select crentical with holding ⌘ (Command) key, the workflow will ask you copy which field. After that, you can paste them into field. It is useful when the login page has step-by-step experience.
 
 ## License
 MIT
